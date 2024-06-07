@@ -1,0 +1,830 @@
+@charset "utf-8";
+/* CSS Document */
+
+/***** Start Generatl Rules *****/
+
+:root{
+	--padding-top:60px;
+	--padding-bottom:60px;
+}
+
+.clearfix{
+	clear:both;
+}
+
+/***** End Generatl Rules *****/
+
+/***** Start Header Section *****/
+section.header{
+	height:auto;
+	overflow:hidden;
+	background-color:#161515;
+}
+
+section.header div.logo h1{
+	color:gold;
+	text-transform:capitalize;
+	margin:0px;
+	padding:0px;
+}
+
+section.header nav ul.list{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+	display:flex;
+	justify-content:space-between;
+	margin-top:10px;
+}
+
+section.header nav ul.list li.list_item a{
+	text-transform:capitalize;
+	color:deepskyblue;
+	font-size:20px;
+	padding:20px;
+	box-sizing:border-box;
+	box-sizing:-moz-border-box;
+	box-sizing:-ms-border-box;
+	box-sizing:-o-border-box;
+	box-sizing:-webkit-border-box;
+	text-decoration:none;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+
+section.header nav ul.list li.list_item a:hover{
+	color:gold;
+}
+
+section.header div.menu_icon{
+	color:gold;
+	float:right;
+	position:absolute;
+	right:10px;
+	top:0px;
+	font-size:40px;
+	cursor:pointer;
+	display:none;
+}
+
+/***** Large Screen *****/
+@media(max-width:1100px){
+	section.header{
+		padding-bottom:20px;
+	}
+	
+	section.header div.logo h1{
+		display:block;
+		text-align:center;
+	}
+	
+	section.header nav ul.list{
+		text-align:center;
+		display:none;
+		margin:0px;
+	}
+	
+	section.header nav ul.list li.list_item{
+		margin:5px;
+	}
+	
+	section.header nav ul.list li.list_item a{
+		padding:0px;
+		display:block;
+		font-weight:bold;
+	}
+	
+	section.header nav ul.list li.list_item a:hover{
+		background-color:gold;
+		color:#000;
+	}
+	
+	section.header div.menu_icon{
+		display:block;
+	}
+}
+
+/***** End Header Section *****/
+
+/***** Start Sticy Section *****/
+section.sticy{
+	position:fixed;
+	width:100%;
+	left:0px;
+	top:0px;
+	z-index:999;
+	display:none;
+}
+/***** End Sticy Section *****/
+
+/***** Start Home Section *****/
+section.home{
+	background-color:#0F0F0F;
+	color:#fff;
+	padding-top:60px;
+	padding-bottom:60px;
+	box-sizing:border-box;
+	box-sizing:-moz-border-box;
+	box-sizing:-ms-border-box;
+	box-sizing:-o-border-box;
+	box-sizing:-webkit-border-box;
+	height:auto;
+	overflow:hidden;
+}
+
+section.home div.home_img{
+	width:100%;
+	height:100%;
+}
+
+section.home div.home_img img{
+	width:100%;
+	height:80%;
+}
+
+section.home div.home_info h3.home_info_title{
+	text-transform:capitalize;
+	border-bottom:1px solid gold;
+	padding-bottom:10px;
+}
+
+section.home div.home_info p.home_info_desc{
+	color:dimgray;
+	font-weight:bold;
+	line-height:1.8;
+}
+
+section.home div.home_info div.home_info_list h3.home_info_list_title{
+	text-transform:capitalize;
+}
+
+section.home div.home_info div.home_info_list ol{
+	padding-left:19px;
+}
+
+section.home div.home_info div.home_buttons a{
+	background-color:darkslategray;
+	color:gold;
+	border:0px;
+	outline:none;
+	padding:10px 30px;
+	font-weight:bold;
+	text-transform:capitalize;
+	cursor:pointer;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	display:inline-block;
+	text-decoration:none;
+}
+
+section.home div.home_info div.home_buttons a:hover{
+	background-color:gold;
+	color:black;
+}
+
+/***** Large Screen *****/
+@media(max-width:1197px){
+	section.home div.home_img{
+		height:125%;
+	}
+}
+
+/***** Medium Screen *****/
+@media(max-width:809px){
+	section.home div.home_info{
+		margin-top:20px;
+	}
+}
+/***** End Home Section *****/
+
+/***** Start About Section *****/
+section.about{
+	background-color:#171613;
+	padding-top:var(--padding-top);
+	padding-bottom:var(--padding-bottom);
+	height:auto;
+	overflow:hidden;
+}
+
+section.about div.about_info h3.about_info_title{
+	color:#fff;
+	font-weight:bold;
+	text-transform:capitalize;
+	border-bottom:1px solid gold;
+	padding-bottom:10px;
+}
+
+section.about div.about_info p{
+	color:dimgray;
+	text-transform:capitalize;
+	font-weight:bold;
+	font-size:20px;
+}
+
+section.about div.about_info p span{
+	color:darkgoldenrod;
+}
+
+section.about div.about_info a.about_info_button{
+	background-color:darkslategray;
+	color:gold;
+	border:0px;
+	outline:none;
+	padding:10px 30px;
+	font-weight:bold;
+	text-transform:capitalize;
+	cursor:pointer;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	display:inline-block;
+	text-decoration:none;
+}
+
+section.about div.about_info a.about_info_button:hover{
+	background-color:gold;
+	color:#000;
+}
+
+section.about div.about_photo{
+	width:100%;
+	height:100%;
+	display:block;
+	background-image:url("../images/about section/photo.jpg");
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:100% 100%;
+}
+
+/***** Medium Screen *****/
+@media(max-width:810px){
+	section.about div.about_photo{
+		height:70vh;
+		margin-top:20px;
+	}
+}
+/***** End About Section *****/
+
+/***** Start Services Section *****/
+section.services{
+	background-color:#1A1313;
+	height:auto;
+	overflow:hidden;
+	padding-top:var(--padding-top);
+	padding-bottom:var(--padding-bottom);
+}
+
+section.services div.services_title{
+	margin-bottom:30px;
+}
+
+section.services div.services_title h1{
+	color:orange;
+	text-align:center;
+	text-transform:capitalize;
+}
+
+section.services div.services_info{
+	background-color:black;
+	padding:15px;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+section.services div.services_info i.icon{
+	color:gold;
+	font-size:50px;
+}
+
+section.services div.services_info h2.title{
+	color:darkgoldenrod;
+	text-transform:capitalize;
+	font-weight:bold;
+}
+
+section.services div.services_info p.desc{
+	color:deepskyblue;
+}
+
+section.services div.services_info button.btn{
+	background-color:darkslategray;
+	color:gold;
+	font-weight:bold;
+	padding:10px 30px;
+	border:0px;
+	outline:none;
+	text-transform:uppercase;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+
+section.services div.services_info button.btn:hover{
+	background-color:gold;
+	color:#000;
+}
+/***** End Services Section *****/
+
+/***** Start Doctors Section *****/
+section.doctors{
+	background-color:black;
+	padding-top:var(--padding-top);
+	padding-bottom:var(--padding-bottom);
+}
+
+section.doctors div.doctors_title{
+	text-align:center;
+	text-transform:capitalize;
+	color:orange;
+	margin-bottom:30px;
+}
+
+section.doctors div.doctor_info{
+	text-align:center;
+}
+
+section.doctors div.doctor_info img{
+	width:300px;
+	height:300px;
+	margin:auto;
+}
+
+section.doctors div.doctor_info h3.title{
+	text-transform:capitalize;
+	color:gold;
+	margin-top:10px;
+}
+
+section.doctors div.doctor_info p.desc{
+	color:darkgoldenrod;
+}
+
+section.doctors div.doctor_info div.doctor_info_icons{
+	padding:10px;
+	box-sizing:border-box;
+	box-sizing:-moz-border-box;
+	box-sizing:-ms-border-box;
+	box-sizing:-o-border-box;
+	box-sizing:-webkit-border-box;
+	display:flex;
+	justify-content:space-evenly;
+}
+
+section.doctors div.doctor_info div.doctor_info_icons i.icon{
+	font-size:25px;
+}
+
+section.doctors div.doctor_info div.doctor_info_icons i.icon a{
+	
+	margin:0px 20px;
+	margin-top:10px;
+	color:deepskyblue;
+}
+
+.owl-theme .owl-dots .owl-dot{
+	outline:none;
+}
+/***** End Doctors Section *****/
+
+/***** Start Contact Section *****/
+section.contact{
+	background-color:#060303;
+	padding-top:var(--padding-top);
+	padding-bottom:var(--padding-bottom);
+	overflow:hidden;
+}
+
+section.contact div.contact_info{
+	margin-bottom:30px;
+}
+
+section.contact div.contact_info h1.title{
+	color:orange;
+	text-align:center;
+	text-transform:capitalize;
+}
+
+section.contact div.contact_form{
+	color:white;
+}
+
+section.contact div.contact_form form div.email_input{
+	margin-bottom:20px;
+}
+
+section.contact div.contact_form form div.email_input label{
+	color:gold;
+	text-transform:capitalize;
+}
+
+section.contact div.contact_form form div.email_input input{
+	display:block;
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+	box-sizing:-moz-border-box;
+	box-sizing:-ms-border-box;
+	box-sizing:-o-border-box;
+	box-sizing:-webkit-border-box;
+	outline:none;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+	font-weight:bold;
+	background-color:black;
+	color:darkgoldenrod;
+}
+
+section.contact div.contact_form form div.email_input p{
+	color:darkgoldenrod;
+	text-transform:capitalize;
+	margin-top:10px;
+	display:none;
+}
+
+section.contact div.contact_form form div.password_input{
+	margin-bottom:20px;
+}
+
+section.contact div.contact_form form div.password_input label{
+	color:gold;
+	text-transform:capitalize;
+}
+
+section.contact div.contact_form form div.password_input input{
+	display:block;
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+	box-sizing:-moz-border-box;
+	box-sizing:-ms-border-box;
+	box-sizing:-o-border-box;
+	box-sizing:-webkit-border-box;
+	outline:none;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+	font-weight:bold;
+	background-color:black;
+	color:darkgoldenrod;
+}
+
+section.contact div.contact_form form div.password_input p{
+	color:darkgoldenrod;
+	text-transform:capitalize;
+	margin-top:10px;
+	display:none;
+}
+
+section.contact div.contact_form form div.buttons_inputs input{
+	background-color:darkslategray;
+	color:gold;
+	padding:10px 30px;
+	font-weight:bold;
+	text-transform:capitalize;
+	outline:none;
+	border:0px;
+	cursor:pointer;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	margin-bottom:20px;
+}
+
+section.contact div.contact_form form div.buttons_inputs input:hover{
+	background-color:gold;
+	color:#000;
+}
+
+section.contact div.contact_form form div.link_to_create_new_account p{
+	font-weight:normal;
+	color:gold;
+	width:30%;
+	border-bottom:1px solid gold;
+	cursor:pointer;
+	text-transform:capitalize;
+}
+
+section.contact div.section_create_new_account{
+	display:none;
+}
+
+section.contact div.section_create_new_account form div.first_and_last_name_inputs input{
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+	box-sizing:-moz-border-box;
+	box-sizing:-ms-border-box;
+	box-sizing:-o-border-box;
+	box-sizing:-webkit-border-box;
+	outline:none;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+	font-weight:bold;
+	background-color:black;
+	color:darkgoldenrod;
+	margin:10px auto;
+}
+
+section.contact div.section_create_new_account form div.first_and_last_name_inputs p{
+	color:darkgoldenrod;
+	text-transform:capitalize;
+	display:none;
+}
+
+section.contact div.section_create_new_account form div.user_email input{
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+	box-sizing:-moz-border-box;
+	box-sizing:-ms-border-box;
+	box-sizing:-o-border-box;
+	box-sizing:-webkit-border-box;
+	outline:none;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+	font-weight:bold;
+	background-color:black;
+	color:darkgoldenrod;
+	margin:10px auto;
+}
+
+section.contact div.section_create_new_account form div.user_email p{
+	color:darkgoldenrod;
+	text-transform:capitalize;
+	display:none;
+}
+
+section.contact div.section_create_new_account form div.confirm_user_email input{
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+	box-sizing:-moz-border-box;
+	box-sizing:-ms-border-box;
+	box-sizing:-o-border-box;
+	box-sizing:-webkit-border-box;
+	outline:none;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+	font-weight:bold;
+	background-color:black;
+	color:darkgoldenrod;
+	margin:10px auto;
+}
+
+section.contact div.section_create_new_account form div.confirm_user_email p{
+	color:darkgoldenrod;
+	text-transform:capitalize;
+	display:none;
+}
+
+section.contact div.section_create_new_account form div.user_phone input{
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+	box-sizing:-moz-border-box;
+	box-sizing:-ms-border-box;
+	box-sizing:-o-border-box;
+	box-sizing:-webkit-border-box;
+	outline:none;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+	font-weight:bold;
+	background-color:black;
+	color:darkgoldenrod;
+	margin:10px auto;
+}
+
+section.contact div.section_create_new_account form div.user_phone p{
+	color:darkgoldenrod;
+	text-transform:capitalize;
+	display:none;
+}
+
+section.contact div.section_create_new_account form div.user_date_of_birth{
+	display:flex;
+	justify-content:space-evenly;
+}
+
+section.contact div.section_create_new_account form div.user_date_of_birth select{
+	width:32%;
+	padding:10px;
+	box-sizing:border-box;
+	box-sizing:-moz-border-box;
+	box-sizing:-ms-border-box;
+	box-sizing:-o-border-box;
+	box-sizing:-webkit-border-box;
+	outline:none;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+	font-weight:bold;
+	background-color:black;
+	color:darkgoldenrod;
+	margin:10px auto;
+	text-align:center;
+	cursor:pointer;
+}
+
+section.contact div.section_create_new_account form div.user_gender{
+	display:flex;
+	justify-content:space-around;
+	margin:20px auto;
+}
+
+section.contact div.section_create_new_account form div.user_gender div.user_male,
+section.contact div.section_create_new_account form div.user_gender div.user_female,
+section.contact div.section_create_new_account form div.user_gender div.user_other{
+	background-color:black;
+	color:darkgoldenrod;
+	font-weight:bold;
+	border:1px solid;
+	border-color:light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px;
+	padding:10px;
+	box-sizing:border-box;
+	box-sizing:-moz-border-box;
+	box-sizing:-ms-border-box;
+	box-sizing:-o-border-box;
+	box-sizing:-webkit-border-box;
+}
+
+section.contact div.section_create_new_account form div.user_gender div.user_male label,
+section.contact div.section_create_new_account form div.user_gender div.user_female label,
+section.contact div.section_create_new_account form div.user_gender div.user_other label{
+	cursor:pointer;
+	text-transform:capitalize;
+}
+
+section.contact div.section_create_new_account form div.user_gender div.user_male input,
+section.contact div.section_create_new_account form div.user_gender div.user_female input,
+section.contact div.section_create_new_account form div.user_gender div.user_other input{
+	cursor:pointer;
+}
+
+section.contact div.section_create_new_account form div.submit_btn{
+	margin:25px auto;
+}
+
+section.contact div.section_create_new_account form div.submit_btn input{
+	width:49%;
+	padding:10px;
+	box-sizing:border-box;
+	box-sizing:-moz-border-box;
+	box-sizing:-ms-border-box;
+	box-sizing:-o-border-box;
+	box-sizing:-webkit-border-box;
+	font-weight:bold;
+	border:1px solid;
+	border-color:light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+	background-color:black;
+	color:darkgoldenrod;
+	cursor:pointer;
+	outline:none;
+	text-transform:capitalize;
+}
+
+section.contact div.section_create_new_account form div.i_have_an_account p{
+	font-weight:normal;
+	color:gold;
+	width:24%;
+	border-bottom:1px solid gold;
+	cursor:pointer;
+	text-transform:capitalize;
+}
+
+/* Extra small Screen (xs)*/
+@media(min-width:423px){
+	section.contact div.contact_in_map iframe{
+		width:100%;
+	}
+}
+/***** End Contact Section *****/
+
+/***** Start Certificates Section *****/
+section.certificates{
+	background-color:#0F0F0F;
+	padding-top:var(--padding-top);
+	padding-bottom:var(--padding-bottom);
+	height:auto;
+	overflow:hidden;
+}
+
+section.certificates div.certificates_logo{
+	text-align:center;
+	margin-bottom:30px;
+	color:orange;
+	text-transform:capitalize;
+}
+
+section.certificates nav.menu ul.list{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	margin-bottom:20px;
+	background-color:black;
+}
+
+section.certificates nav.menu ul.list li.list_item{
+	color:darkgoldenrod;
+	font-weight:bold;
+	font-size:20px;
+	text-align:center;
+	text-transform:capitalize;
+	padding:10px;
+	cursor:pointer;
+}
+
+section.certificates nav.menu ul.list li.list_item:hover{
+	border-bottom:1px solid gold;
+}
+/***** End Certificates Section *****/
+
+/***** Start Footer Section *****/
+section.footer{
+	background-color:black;
+	height:auto;
+	overflow:hidden;
+	/*line-height:90px;*/
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+section.footer p.footer_desc{
+	text-align:center;
+	text-transform:capitalize;
+	color:orange;
+	font-weight:bold;
+	font-size:18px;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+section.footer p.footer_desc a{
+	color:#007bff;
+}
+
+/* Extra Small Screen ( xs ) */
+@media(max-width:540px){
+	section.footer p.footer_desc{
+		font-size:16px;
+	}
+}
+
+/* Small Screen ( sm )*/
+@media(max-width:617px){
+	section.footer p.footer_desc br#the_new_line{
+		display:block !important;
+	}
+}
+/***** End Footer Section *****/
+
+/***** Start an_arrow_to_top Section *****/
+section.an_arrow_to_top{
+	position:fixed;
+	background-color:#C4A500;
+	text-align:center;
+	right:10px;
+	bottom:10px;
+	height:50px;
+	width:50px;
+	line-height:50px;
+	padding:5px;
+	cursor:pointer;
+	z-index:99;
+	border-radius:50%;
+	display:none;
+}
+
+section.an_arrow_to_top i.icon{
+	font-size:30px;
+	color:black;
+}
+
+/* Extra Small Screen ( xs ) */
+@media(max-width:545px){
+	section.an_arrow_to_top{
+		height:40px;
+		width:40px;
+		line-height:40px;
+	}
+}
+/***** End an_arrow_to_top Section *****/

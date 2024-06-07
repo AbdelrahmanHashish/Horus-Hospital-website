@@ -1,0 +1,564 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<meta name="Description" content="Horus is a specialized hospital that has been providing various health care services since 1995, for patient services"/>
+<meta name="Keywords" content="hospital,Doctor,nurse,Horus"/>
+<meta name="Author" content="Engineer Abdelrahman Mostafa Hashish"/>
+<title>Horus Hospital</title>
+<!--- JQuery files --->
+<script type="text/javascript" src="js/vendors/JQuery.js"></script>
+<!--- Normalize files --->
+<link rel="stylesheet" type="text/css" href="css/vendors/normalize.css"/>
+<!--- Bootstrap files --->
+<link rel="stylesheet" type="text/css" href="css/vendors/bootstrap.min.css"/>
+<script type="text/javascript" src="js/vendors/bootstrap.min.js"></script>
+<!--- Font-Awesome Files --->
+<link rel="stylesheet" type="text/css" href="css/vendors/brands.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/vendors/fontawesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/vendors/regular.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/vendors/solid.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/vendors/svg-with-js.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/vendors/v4-font-face.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/vendors/v4-shims.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/vendors/v5-font-face.min.css"/>
+<!--- popper.js files ( CDN ) --->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<!--- tether-master --->
+<link rel="stylesheet" type="text/css" href="css/vendors/tether.scss"/>
+<!--- animate.style plugin --->
+<link rel="stylesheet" type="text/css" href="css/vendors/animate.css"/>
+<!--- owl-carousel plugin --->
+<link rel="stylesheet" type="text/css" href="css/vendors/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/vendors/owl.theme.default.min.css"/>
+<!--- AOS Plugin --->
+<link rel="stylesheet" type="text/css" href="css/vendors/aos.css"/>
+<!--- css file --->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+<body>
+	<!--- Start Header Section --->
+	<section class="header">
+		<div class="container-fluid"><!--- .container-fluid --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-12 col-lg-12 col-xl-3 col-xs-12"><!--- column --->
+					<div class="logo"><!--- .logo --->
+						<h1><i class="fa fa-hospital-symbol"></i> Horus</h1>
+					</div><!-- ./logo -->
+				</div><!--- /column --->
+				<div class="col-md-12 col-lg-12 col-xl-9 col-xs-12"><!--- column --->
+					<nav>
+						<ul class="list"><!--- .list --->
+							<li class="list_item"><a href="#home" target="_self" data-value="home">Home</a></li>
+							<li class="list_item"><a href="#about" target="_self" data-value="about">About</a></li>
+							<li class="list_item"><a href="#services" target="_self" data-value="services">Services</a></li>
+							<li class="list_item"><a href="#doctors" target="_self" data-value="doctors">Doctors</a></li>
+							<li class="list_item"><a href="#contact" target="_self" data-value="contact">Contact</a></li>
+							<li class="list_item"><a href="#certificates" target="_self" data-value="certificates">Certificates</a></li>
+						</ul><!--- ./list --->
+					</nav>
+				</div><!--- /column --->
+			</div><!--- ./row --->
+			<div class="menu_icon"><!--- .menu_icon --->
+				<i class="fa fa-bars"></i>
+			</div><!--- ./menu_icon --->
+		</div><!--- ./container-fluid --->
+	</section>
+	<!--- End Header Section --->
+	
+	<!--- Start sticy Section --->
+	<section class="header sticy">
+		<div class="container-fluid"><!--- .container-fluid --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-12 col-lg-12 col-xl-3 col-xs-12"><!--- column --->
+					<div class="logo"><!--- .logo --->
+						<h1><i class="fa fa-hospital-symbol"></i> Horus</h1>
+					</div><!-- ./logo -->
+				</div><!--- /column --->
+				<div class="col-md-12 col-lg-12 col-xl-9 col-xs-12"><!--- column --->
+					<nav>
+						<ul class="list">
+							<li class="list_item"><a href="#home" target="_self" data-value="home">Home</a></li>
+							<li class="list_item"><a href="#about" target="_self" data-value="about">About</a></li>
+							<li class="list_item"><a href="#services" target="_self" data-value="services">Services</a></li>
+							<li class="list_item"><a href="#doctors" target="_self" data-value="doctors">Doctors</a></li>
+							<li class="list_item"><a href="#contact" target="_self" data-value="contact">Contact</a></li>
+							<li class="list_item"><a href="#certificates" target="_self" data-value="certificates">Certificates</a></li>
+						</ul><!-- ./list -->
+					</nav>
+				</div><!--- /column --->
+			</div><!--- ./row --->
+			<div class="menu_icon"><!--- .menu_icon --->
+				<i class="fa fa-bars"></i>
+			</div><!--- ./menu_icon --->
+		</div><!--- ./container-fluid --->
+	</section>
+	<!--- End Sticy Section --->
+	
+	<!--- Start Home Section --->
+	<section class="home" id="home">
+		<div class="container-fluid"><!--- .container-fluid --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-6 col-xs-12"><!--- column --->
+					<div class="home_img" data-aos="fade-up"><!--- .home_img --->
+						<img src="images/home section/hospital building.jpg" alt="photo"/>
+					</div><!--- ./home_img --->
+				</div><!--- /column --->
+				<div class="col-md-6 col-xs-12"><!--- column --->
+					<div class="home_info" data-aos="fade-down"><!--- .home_info --->
+						<h3 class="home_info_title">Horus Hospital</h3>
+						<p class="home_info_desc"><!--- .home_info_desc --->
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis similique earum unde consequuntur eveniet dolore nostrum voluptatibus alias ea suscipit, recusandae illo nulla. Fugit eaque laboriosam voluptas mollitia excepturi! Harum nostrum maxime debitis, perspiciatis, eius omnis accusantium rerum, laudantium odit magnam quas delectus cum illum consequuntur cumque modi optio pariatur.
+						</p><!-- ./home_info_desc -->
+						<div class="home_info_list"><!--- .home_info_list --->
+							<h3 class="home_info_list_title">Hospital Officials</h3>
+							<ol>
+								<li>John</li>
+								<li>Harry</li>
+								<li>Petter</li>
+							</ol>
+						</div><!--- ./home_info_list --->
+						<div class="home_buttons"><!--- .home_buttons --->
+							<a href="#" target="_self">Sign In</a>
+							<a href="#" target="_self">Sign UP</a>
+						</div><!--- ./home_buttons --->
+					</div><!--- ./home_info --->
+				</div><!--- /column --->
+			</div><!--- ./row --->
+		</div><!--- ./container-fluid --->
+	</section>
+	<!--- End Home Section --->
+	
+	<!--- Start About Section --->
+	<section class="about" id="about">
+		<div class="container-fluid"> <!--- .container-fluid --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-6 col-xs-12"><!--- column --->
+					<div class="about_info" data-aos="fade-right"><!--- .about_info --->
+						<h3 class="about_info_title">About Us</h3>
+						<p>Hospital's Name:<span> Horus</span></p>
+						<p>Construction History:<span> 1970</span></p>
+						<p>Number of patient rooms:<span> 100</span></p>
+						<p>Number of intensive care units:<span> 250</span></p>
+						<p>Hospital Space:<span> 1000 X 2000 acre</span></p>
+						<a href="#" target="_self" class="about_info_button">More Info</a>
+					</div><!-- ./about_info -->
+				</div><!--- /column --->
+				<div class="col-md-6 col-xs-12"><!--- column --->
+					<div class="about_photo" data-aos="fade-left">
+					</div><!-- ./about_photo -->
+				</div><!--- /column --->
+			</div><!--- ./row --->
+		</div><!--- ./container-fluid --->
+	</section>
+	<!--- End About Section --->
+	
+	<!--- Start Services Section --->
+	<section class="services" id="services">
+		<div class="container-fluid"><!--- .container-fluid --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-12 col-xs-12"><!--- column --->
+					<div class="services_title"><!--- .services_title --->
+						<h1 class="wow rollIn"><i class="fa-brands fa-servicestack"></i> Services</h1>
+					</div><!--- ./services_title --->
+				</div><!--- /column --->
+			</div><!--- ./row --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-4 col-xs-12"><!--- column --->
+					<div class="services_info" data-aos="flip-left"><!--- .services_info --->
+						<i class="fa-solid fa-hospital-user icon"></i>
+						<h2 class="title">Patient Services</h2>
+						<p class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime saepe, molestiae quisquam esse blanditiis autem praesentium laboriosam voluptatem exercitationem eaque.
+						</p>
+						<button class="btn">More Info</button>
+					</div><!-- ./services_info -->
+				</div><!--- /column --->
+				<div class="col-md-4 col-xs-12"><!--- column --->
+					<div class="services_info" data-aos="flip-up"><!--- .services_info --->
+						<i class="fa-solid fa-house-medical-flag icon"></i>
+						<h2 class="title">Public services</h2>
+						<p class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime saepe, molestiae quisquam esse blanditiis autem praesentium laboriosam voluptatem exercitationem eaque.
+						</p>
+						<button class="btn">More Info</button>
+					</div><!-- ./services_info -->
+				</div><!--- /column --->
+				<div class="col-md-4 col-xs-12"><!--- column --->
+					<div class="services_info" data-aos="flip-right"><!--- .services_info --->
+						<i class="fa-solid fa-house-medical-circle-check icon"></i>
+						<h2 class="title">Medical stores</h2>
+						<p class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime saepe, molestiae quisquam esse blanditiis autem praesentium laboriosam voluptatem exercitationem eaque.
+						</p>
+						<button class="btn">More Info</button>
+					</div><!-- ./services_info -->
+				</div><!--- /column --->
+			</div><!-- ./row -->
+			<!--- Start clearfix ( New Line) --->
+			<div class="clearfix"></div>
+			<!--- End clearfix ( New Line) --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-4 col-xs-12"><!--- column --->
+					<div class="services_info" data-aos="flip-left"><!--- .services_info --->
+						<i class="fa-solid fa-coins icon"></i>
+						<h2 class="title">financial affairs</h2>
+						<p class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime saepe, molestiae quisquam esse blanditiis autem praesentium laboriosam voluptatem exercitationem eaque.
+						</p>
+						<button class="btn">More Info</button>
+					</div><!-- ./services_info -->
+				</div><!--- /column --->
+				<div class="col-md-4 col-xs-12"><!--- column --->
+					<div class="services_info" data-aos="flip-down"><!--- .services_info --->
+						<i class="fa-solid fa-file-medical icon"></i>
+						<h2 class="title">Health information</h2>
+						<p class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime saepe, molestiae quisquam esse blanditiis autem praesentium laboriosam voluptatem exercitationem eaque.
+						</p>
+						<button class="btn">More Info</button>
+					</div><!-- ./services_info -->
+				</div><!--- /column --->
+				<div class="col-md-4 col-xs-12"><!--- column --->
+					<div class="services_info" data-aos="flip-right"><!--- .services_info --->
+						<i class="fa-brands fa-galactic-republic icon"></i>
+						<h2 class="title">Public Relations</h2>
+						<p class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime saepe, molestiae quisquam esse blanditiis autem praesentium laboriosam voluptatem exercitationem eaque.
+						</p>
+						<button class="btn">More Info</button>
+					</div><!-- ./services_info -->
+				</div><!--- /column --->
+			</div><!--- ./row --->
+		</div><!--- ./container-fluid --->
+	</section>
+	<!--- End Services Section --->
+	
+	<!--- Start Doctors Section --->
+	<section class="doctors" id="doctors">
+		<div class="container-fluid"><!--- .container-fluid --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-12 col-xs-12"><!--- column --->
+					<div class="doctors_title"><!--- .doctors_title --->
+						<h1 class="wow rollIn"><i class="fa fa-user-doctor icon"></i> Doctors</h1>
+					</div><!--- ./doctors_title --->
+				</div><!--- /column --->
+			</div><!--- ./row --->
+			<div class="owl-carousel owl-theme"><!--- .owl-carousel && .owl-theme --->
+				<div class="item"><!--- .item --->
+					<div class="doctor_info"><!--- .doctor_info --->
+						<img src="images/doctors section/doctor1.png" alt="doctor1"/>
+						<h3 class="title">John</h3>
+						<p class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vitae, harumperspiciatis eaque laborum quia!
+						</p>
+						<div class="doctor_info_icons"><!--- .doctor_info_icons --->
+							<a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square icon"></i></a>
+							<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square icon"></i></a>
+							<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram icon"></i></a>
+							<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square icon"></i></a>
+						</div><!--- ./doctor_info_icons --->
+					</div><!--- ./doctor_info --->
+				</div><!--- ./item --->
+				<div class="item"><!--- .item --->
+					<div class="doctor_info"><!--- .doctor_info --->
+						<img src="images/doctors section/doctor2.png" alt="doctor2"/>
+						<h3 class="title">Sara</h3>
+						<p class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vitae, harum perspiciatis eaque laborum quia!
+						</p>
+						<div class="doctor_info_icons"><!--- .doctor_info_icons --->
+							<a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square icon"></i></a>
+							<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square icon"></i></a>
+							<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram icon"></i></a>
+							<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square icon"></i></a>
+						</div><!--- ./doctor_info_icons --->
+					</div><!--- ./doctor_info --->
+				</div><!--- ./item --->
+				<div class="item"><!--- .item --->
+					<div class="doctor_info"><!--- .doctor_info --->
+						<img src="images/doctors section/doctor3.png" alt="doctor3"/>
+						<h3 class="title">Angela</h3>
+						<p class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vitae, harum perspiciatis eaque laborum quia!
+						</p>
+						<div class="doctor_info_icons"><!--- .doctor_info_icons --->
+							<a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square icon"></i></a>
+							<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square icon"></i></a>
+							<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram icon"></i></a>
+							<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square icon"></i></a>
+						</div><!--- ./doctor_info_icons --->
+					</div><!--- ./doctor_info --->
+				</div><!--- ./item --->
+				<div class="item"><!--- .item --->
+					<div class="doctor_info"><!--- .doctor_info --->
+						<img src="images/doctors section/doctor4.png" alt="doctor3"/>
+						<h3 class="title">Potter</h3>
+						<p class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vitae, harum perspiciatis eaque laborum quia!
+						</p>
+						<div class="doctor_info_icons"><!--- .doctor_info_icons --->
+							<a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square icon"></i></a>
+							<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square icon"></i></a>
+							<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram icon"></i></a>
+							<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square icon"></i></a>
+						</div><!--- ./doctor_info_icons --->
+					</div><!--- ./doctor_info --->
+				</div><!--- ./item --->
+				<div class="item"><!--- .item --->
+					<div class="doctor_info"><!--- .doctor_info --->
+						<img src="images/doctors section/doctor5.png" alt="doctor3"/>
+						<h3 class="title">Jane</h3>
+						<p class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vitae, harum perspiciatis eaque laborum quia!
+						</p>
+						<div class="doctor_info_icons"><!--- .doctor_info_icons --->
+							<a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square icon"></i></a>
+							<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square icon"></i></a>
+							<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram icon"></i></a>
+							<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square icon"></i></a>
+						</div><!--- ./doctor_info_icons --->
+					</div><!--- ./doctor_info --->
+				</div><!--- ./item --->
+				<div class="item"><!--- .item --->
+					<div class="doctor_info"><!--- .doctor_info --->
+						<img src="images/doctors section/doctor6.png" alt="doctor3"/>
+						<h3 class="title">Martina</h3>
+						<p class="desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam vitae, harum perspiciatis eaque laborum quia!
+						</p>
+						<div class="doctor_info_icons"><!--- .doctor_info_icons --->
+							<a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square icon"></i></a>
+							<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square icon"></i></a>
+							<a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram icon"></i></a>
+							<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square icon"></i></a>
+						</div><!--- ./doctor_info_icons --->
+					</div><!--- ./doctor_info --->
+				</div><!--- ./item --->
+			</div><!--- ./owl-carousel && ./owl-theme --->
+		</div><!--- ./container-fluid --->
+	</section>
+	<!--- End Doctors Section --->
+	
+	<!--- Start Contact Section --->
+	<section class="contact" id="contact">
+		<div class="container-fluid"><!--- .container-fluid --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-12 col-xs-12"><!--- column --->
+					<div class="contact_info"><!--- .contact_info --->
+						<h1 class="title wow rollIn"><i class="fa-solid fa-address-book"></i> Contact Us</h1>
+					</div><!--- ./contact_info --->
+				</div><!--- /column --->
+			</div><!--- ./row --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-6 col-xs-12"><!--- column --->
+					<div class="contact_form" data-aos="flip-left"><!--- .contact_info --->
+						<form action="" method="post"><!--- form --->
+							<div class="email_input">
+								<label>Email *</label>
+								<input type="email" placeholder="Your Email" required="required" id="user_email"/>
+								<p id="waring_email"></p>
+							</div>
+							<div class="password_input">
+								<label>Password *</label>
+								<input type="password" placeholder="Your Password" required="required" id="user_password"/>
+								<p id="waring_password"></p>
+							</div>
+							<div class="buttons_inputs">
+								<input type="button" value="Sign In" onClick="sing_in();"/>
+								<input type="reset" value="reset"/>
+							</div>
+							<div class="link_to_create_new_account">
+								<p><i class="fa-solid fa-right-to-bracket"></i> Create New Account</p>
+							</div>
+						</form><!--- /form --->
+					</div><!--- ./contact_info --->
+					<div class="section_create_new_account" data-aos="flip-left"><!--- .section_create_new_account --->
+						<form action="" method="post"><!--- form --->
+							<div class="first_and_last_name_inputs"><!--- .first_and_last_name_inputs --->
+								<input type="text" placeholder="First Name" required="required" id="user_first_name_in_create_account"/>
+								<p id="waring_first_name_in_create_account">Lorem ipsum dolor sit amet.</p>
+								<input type="text" placeholder="Last Name" required="required" id="user_last_name_in_create_account"/>
+								<p id="waring_last_name_in_create_account">Lorem ipsum dolor sit amet.</p>
+							</div><!--- ./first_and_last_name_inputs --->
+							<div class="user_email"><!--- .user_email --->
+								<input type="email" placeholder="Your Email" required="required" id="user_email_in_create_account"/>
+								<p id="waring_email_in_create_account">Lorem ipsum dolor sit amet.</p>
+							</div><!--- ./user_email --->
+							<div class="confirm_user_email"><!--- .confirm_user_email --->
+								<input type="email" placeholder="Confirm Your Email" required="required" id="user_confirm_email_in_create_account"/>
+								<p id="waring_confirm_email_in_create_account">Lorem ipsum dolor sit amet.</p>
+							</div><!--- ./confirm_user_email --->
+							<div class="user_phone"><!--- .user_phone --->
+								<input type="text" placeholder="Your Phone" required="required" id="user_phone_in_create_account"/>
+								<p id="waring_phone_in_create_account">Lorem ipsum dolor sit amet.</p>
+							</div><!--- ./user_phone --->
+							<div class="user_date_of_birth"><!--- .user_date_of_birth --->
+								<select id="user_day" required="required"><!--- #user_day --->
+									<option selected="selected" disabled="disabled">Day</option>
+									<script type="text/javascript">
+										for(N = 1; N <= 31; N++){
+											document.write("<option>"+N+"</option>");
+										}
+									</script>
+								</select><!--- #/user_day --->
+								<select id="user_month" required="required"><!--- #user_month --->
+									<option selected="selected" disabled="disabled">Month</option>
+									<script type="text/javascript">
+										var Months = new Array();
+											Months[0] = "January";
+											Months[1] = "February";
+											Months[2] = "March";
+											Months[3] = "April";
+											Months[4] = "May";
+											Months[5] = "June";
+											Months[6] = "July";
+											Months[7] = "August";
+											Months[8] = "September";
+											Months[9] = "October";
+											Months[10] = "November";
+											Months[11] = "December";
+										
+										var Total = Months.length - 1;
+										
+										for(N = 0; N <= Total; N++){
+											document.write("<option>"+Months[N]+"</option>");
+										}
+									</script>
+								</select><!--- #/user_month --->
+								<select id="user_year" required="required"><!--- #user_year --->
+									<option selected="selected" disabled="disabled">Year</option>
+									<script type="text/javascript">
+										for(N = 2024; N >= 1940; N--){
+											document.write("<option>"+N+"</option>");
+										}
+									</script>
+								</select><!-- #/user_year --->
+							</div><!--- ./user_date_of_birth --->
+							<div class="user_gender"><!--- .user_gender --->
+								<div class="user_male"><!--- .user_male --->
+									<label for="male">Male</label>
+									<input type="radio" name="g" id="male" required="required"/>
+								</div><!--- ./user_male --->
+								<div class="user_female"><!--- .user_female --->
+									<label for="female">Female</label>
+									<input type="radio" name="g" id="female" required="required"/>
+								</div><!--- ./user_female --->
+								<div class="user_other"><!--- .user_other --->
+									<label for="other">Other</label>
+									<input type="radio" name="g" id="other" required="required"/>
+								</div><!--- ./user_other --->
+							</div><!--- ./user_gender --->
+							<div class="submit_btn"><!---.submit_btn --->
+								<input type="button" value="Create" onClick="create_new_account();"/>
+								<input type="reset" value="reset"/>
+							</div><!--- ./submit_btn --->
+							<div class="i_have_an_account"><!--- .i_have_an_account --->
+								<p><i class="fa-solid fa-right-to-bracket"></i> I Have An Account</p>
+							</div><!--- ./i_have_an_account --->
+						</form><!--- /form --->
+					</div><!--- ./section_create_new_account --->
+				</div><!--- /column --->
+				<div class="col-md-6 col-xs-12"><!--- column --->
+					<div class="contact_in_map" data-aos="flip-right"><!--- .contact_in_map --->
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110550.40758814888!2d31.107241797801144!3d30.016762633682504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458469235579697%3A0x4e91d61f9878fc52!2sGiza%2C%20El%20Omraniya%2C%20Giza%20Governorate!5e0!3m2!1sen!2seg!4v1715698662043!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div><!--- ./contact_in_map --->
+				</div><!--- /column --->
+			</div><!--- ./row --->
+		</div><!--- ./container-fluid --->
+	</section>
+	<!--- End Contact Section --->
+	
+	<!--- Start Certificates Section --->
+	<section class="certificates" id="certificates">
+		<div class="container-fluid"><!--- .container-fluid --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-12 col-xs-12"><!--- column --->
+					<div class="certificates_logo"><!--- .certificates_logo --->
+						<h1 class="wow rollIn"><i class="fa-solid fa-certificate"></i> certificates</h1>
+					</div><!--- ./certificates_logo --->
+				</div><!--- /column --->
+			</div><!--- ./row --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-3 col-xs-12"><!--- column --->
+					<nav class="menu" data-aos="fade-right"><!--- .menu --->
+						<ul class="list"><!--- .list --->
+							<li class="list_item">certificate 1</li>
+							<li class="list_item">certificate 2</li>
+							<li class="list_item">certificate 3</li>
+							<li class="list_item">certificate 4</li>
+						</ul><!--- ./list --->
+					</nav><!--- ./menu --->
+				</div><!--- /column --->
+				<div class="col-md-3 col-xs-12"><!--- column --->
+					<nav class="menu" data-aos="flip-left"><!--- .menu --->
+						<ul class="list"><!--- .list --->
+							<li class="list_item">certificate 1</li>
+							<li class="list_item">certificate 2</li>
+							<li class="list_item">certificate 3</li>
+							<li class="list_item">certificate 4</li>
+						</ul><!--- ./list --->
+					</nav><!--- ./menu --->
+				</div><!--- /column --->
+				<div class="col-md-3 col-xs-12"><!--- column --->
+					<nav class="menu" data-aos="flip-right"><!--- .menu --->
+						<ul class="list"><!--- .list --->
+							<li class="list_item">certificate 1</li>
+							<li class="list_item">certificate 2</li>
+							<li class="list_item">certificate 3</li>
+							<li class="list_item">certificate 4</li>
+						</ul><!--- ./list --->
+					</nav><!--- ./menu --->
+				</div><!--- /column --->
+				<div class="col-md-3 col-xs-12"><!--- column --->
+					<nav class="menu" data-aos="fade-left"><!--- .menu --->
+						<ul class="list"><!--- .list --->
+							<li class="list_item">certificate 1</li>
+							<li class="list_item">certificate 2</li>
+							<li class="list_item">certificate 3</li>
+							<li class="list_item">certificate 4</li>
+						</ul><!--- ./list --->
+					</nav><!--- ./menu --->
+				</div><!--- /column --->
+			</div><!--- ./row --->
+		</div><!--- ./container-fluid --->
+	</section>
+	<!--- End Certificates Section --->
+	
+	<!--- Start Footer Section --->
+	<section class="footer">
+		<div class="container-fluid"><!--- .container-fluid --->
+			<div class="row"><!--- .row --->
+				<div class="col-md-12 col-xs-12"><!--- column --->
+					<p class="footer_desc"><!--- .footer_desc --->
+						Copyright by &copy;<br style="display:none;" id="the_new_line"/>
+						<a href="https://www.linkedin.com/in/abdelrahman-hashish/" target="_blank">
+							Engineer Abdelrahman Mostafa Hashish
+						</a>
+					</p><!--- ./footer_desc --->
+				</div><!--- /column --->
+			</div><!--- ./row --->
+		</div><!--- ./container-fluid --->
+	</section>
+	<!--- End Footer Section --->
+	
+	<!--- Start an_arrow_to_top Section --->
+	<section class="an_arrow_to_top" id="an_arrow_to_top">
+		<i class="fa fa-arrow-alt-circle-up icon"></i>
+	</section>
+	<!--- End an_arrow_to_top Section --->
+	
+	<!--- script file --->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/vendors/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/vendors/wow.min.js"></script>
+	<script type="text/javascript" src="js/vendors/aos.js"></script>
+	<!--- Start Script AOS Plugin --->
+	<script>
+    AOS.init();
+	</script>
+	<!--- End Script AOS Plugin --->
+</body>
+</html>
